@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Coding Quiz</h1>
+            <div id="js-timer">
+                <div id="timer">00:00</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <button onclick="startQuiz()">Start</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="retryQuiz()">retry</button>
+
+            <div class="timer"></div>
+        </div>
+
+        
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Quiz</title>
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById('answer').value;
+            if(answer = 'JavaScript') {
+                alert('Correct!');
+            } else {
+                alert('Incorrect. The correct answer is JavaScript.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Quiz</h1>
+    <p>What language is used for web apps?</p>
+    <input type="text" id="answer">
+    <button onclick="checkAnswer()">Submit</button>
+</body>
+</html> -->
