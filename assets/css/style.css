@@ -1,35 +1,99 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+}
+
+#quiz-container {
+max-width: 50%;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+}
+
+#timer {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+#choices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.choice {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background-color: #2980b9;
+}
+
+#score {
+  color: white;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #a660cb;
+  color: #fff;
+  border: solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #743894;
+}
+
+@media screen and (min-width: 768px) {
+  /* Base screens */
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablets in landscape mode */
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* Tablets in portrait mode */
+}
+@media screen and (max-width: 767px) {
+  /* Smartphones */
+}
+@media screen and (min-width: 1200px) {
+  /* Large desktop screens */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  /* High-resolution displays */
+}
+@media (color-gamut: srgb) {
+  /* Screens with an sRGB color gamut */
 }
 
 
 
-
-
-@media screen and (min-width: 768px) {
-    /* Base screens */
-  }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Tablets in landscape mode */
-  }
-  @media screen and (max-width: 767px) and (orientation: portrait) {
-    /* Tablets in portrait mode */
-  }
-  @media screen and (max-width: 767px) {
-    /* Smartphones */
-  }
-  @media screen and (min-width: 1200px) {
-    /* Large desktop screens */
-  }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi) {
-    /* High-resolution displays */
-  }
-  @media (color-gamut: srgb) {
-    /* Screens with an sRGB color gamut */
-  }
